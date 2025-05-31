@@ -68,7 +68,7 @@ export const Header = () => {
           {/* Mobile menu button */}
           <div className="md:hidden">
             <button
-              className="text-gray-700 hover:text-teal-600"
+              className="text-gray-700 hover:text-blue-600"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -175,36 +175,36 @@ export const AssemblyFeature = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">Assembly</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">Armado</h2>
             <ul className="space-y-3 text-gray-700 mb-6">
               <li className="flex items-start">
                 <span className="text-green-500 mr-2">✓</span>
-                Assemble or disassemble furniture items by unboxing, building, and any cleanup.
+                Armar o desarmar muebles desempacando, construyendo y limpiando.
               </li>
               <li className="flex items-start">
                 <span className="text-green-500 mr-2">✓</span>
-                Now Trending: Curved sofas, computer desks, and sustainable materials.
+                Tendencias actuales: Sofás curvos, escritorios de computadora y materiales sostenibles.
               </li>
             </ul>
             <div className="grid grid-cols-2 gap-4 text-sm text-gray-600">
               <div>
-                <div className="font-semibold text-gray-900">Furniture Assemblies:</div>
-                <div>3.4 million+</div>
+                <div className="font-semibold text-gray-900">Armado de Muebles:</div>
+                <div>3.4 millones+</div>
               </div>
               <div>
-                <div className="font-semibold text-gray-900">Moving tasks:</div>
-                <div>1.5 million+</div>
+                <div className="font-semibold text-gray-900">Tareas de mudanza:</div>
+                <div>1.5 millones+</div>
               </div>
               <div>
-                <div className="font-semibold text-gray-900">Items mounted:</div>
-                <div>1 million+</div>
+                <div className="font-semibold text-gray-900">Objetos montados:</div>
+                <div>1 millón+</div>
               </div>
               <div>
-                <div className="font-semibold text-gray-900">Home Repairs:</div>
+                <div className="font-semibold text-gray-900">Reparaciones del hogar:</div>
                 <div>700,000+</div>
               </div>
               <div>
-                <div className="font-semibold text-gray-900">Homes cleaned:</div>
+                <div className="font-semibold text-gray-900">Hogares limpiados:</div>
                 <div>800,000+</div>
               </div>
             </div>
@@ -212,7 +212,7 @@ export const AssemblyFeature = () => {
           <div className="relative">
             <img 
               src="https://images.pexels.com/photos/1249611/pexels-photo-1249611.jpeg" 
-              alt="Professional assembling furniture"
+              alt="Profesional armando muebles"
               className="rounded-lg shadow-lg w-full h-80 object-cover"
             />
           </div>
@@ -226,42 +226,42 @@ export const AssemblyFeature = () => {
 export const PopularProjects = () => {
   const projects = [
     {
-      title: 'Furniture Assembly',
+      title: 'Armado de Muebles',
       price: '$35',
       image: 'https://images.pexels.com/photos/1249611/pexels-photo-1249611.jpeg'
     },
     {
-      title: 'Mount Art or Shelves',
+      title: 'Montar Arte o Repisas',
       price: '$39',
       image: 'https://images.pexels.com/photos/275484/pexels-photo-275484.jpeg'
     },
     {
-      title: 'Mount a TV',
+      title: 'Montar TV',
       price: '$89',
       image: 'https://images.unsplash.com/photo-1593784991095-a205069470b6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHwyfHx0diUyMG1vdW50aW5nfGVufDB8fHx8MTc0ODcwODEyN3ww&ixlib=rb-4.1.0&q=85'
     },
     {
-      title: 'Help Moving',
+      title: 'Ayuda con Mudanza',
       price: '$67',
       image: 'https://images.pexels.com/photos/4506270/pexels-photo-4506270.jpeg'
     },
     {
-      title: 'Home & Apartment Cleaning',
+      title: 'Limpieza de Casa y Apartamento',
       price: '$36',
       image: 'https://images.pexels.com/photos/48889/cleaning-washing-cleanup-the-ilo-48889.jpeg'
     },
     {
-      title: 'Minor Plumbing Repairs',
+      title: 'Reparaciones Menores de Plomería',
       price: '$79',
       image: 'https://images.pexels.com/photos/8486923/pexels-photo-8486923.jpeg'
     },
     {
-      title: 'Electrical Help',
+      title: 'Ayuda Eléctrica',
       price: '$89',
       image: 'https://images.pexels.com/photos/8488029/pexels-photo-8488029.jpeg'
     },
     {
-      title: 'Heavy Lifting',
+      title: 'Carga Pesada',
       price: '$67',
       image: 'https://images.pexels.com/photos/5705477/pexels-photo-5705477.jpeg'
     }
@@ -270,7 +270,7 @@ export const PopularProjects = () => {
   return (
     <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Popular Projects</h2>
+        <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Proyectos Populares</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {projects.map((project, index) => (
             <div key={index} className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer">
@@ -281,7 +281,7 @@ export const PopularProjects = () => {
               />
               <div className="p-4">
                 <h3 className="font-semibold text-gray-900 mb-2">{project.title}</h3>
-                <p className="text-gray-600 text-sm">Projects starting at <span className="font-semibold">{project.price}</span></p>
+                <p className="text-gray-600 text-sm">Proyectos desde <span className="font-semibold">{project.price}</span></p>
               </div>
             </div>
           ))}
@@ -299,7 +299,7 @@ export const NewsletterModal = ({ isOpen, onClose }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Newsletter signup:', email);
+    console.log('Suscripción al boletín:', email);
     setEmail('');
     onClose();
   };
@@ -316,39 +316,39 @@ export const NewsletterModal = ({ isOpen, onClose }) => {
         </button>
         
         <div className="flex">
-          <div className="w-1/3 bg-teal-600 rounded-l-lg">
+          <div className="w-1/3 bg-blue-600 rounded-l-lg">
             <img 
               src="https://images.pexels.com/photos/1249611/pexels-photo-1249611.jpeg" 
-              alt="Handyman working"
+              alt="Trabajador profesional"
               className="w-full h-full object-cover rounded-l-lg"
             />
           </div>
           
           <div className="w-2/3 p-6">
-            <h3 className="text-xl font-bold text-gray-900 mb-2">NEVER MISS A DEAL</h3>
+            <h3 className="text-xl font-bold text-gray-900 mb-2">NUNCA TE PIERDAS UNA OFERTA</h3>
             <p className="text-gray-600 text-sm mb-6">
-              From furniture assembly to home repairs, we've got you covered on home projects big and small. You can thank us later.
+              Desde armado de muebles hasta reparaciones del hogar, te ayudamos con proyectos grandes y pequeños. Nos lo agradecerás después.
             </p>
             
             <form onSubmit={handleSubmit}>
               <input
                 type="email"
-                placeholder="email address"
+                placeholder="correo electrónico"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500 mb-4"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 mb-4"
                 required
               />
               <button
                 type="submit"
-                className="w-full bg-teal-600 text-white py-2 rounded-md hover:bg-teal-700 transition-colors font-medium"
+                className="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition-colors font-medium"
               >
-                Sign up now
+                Suscribirse ahora
               </button>
             </form>
             
             <p className="text-xs text-gray-500 mt-4">
-              By subscribing, I agree to receive emails from YUDA about products, services, promotions, and events that I may find interesting.
+              Al suscribirme, acepto recibir correos de YUDA sobre productos, servicios, promociones y eventos que pueden interesarme.
             </p>
           </div>
         </div>
@@ -363,38 +363,38 @@ export const CustomerReviews = () => {
     {
       name: 'Elizabeth P.',
       rating: 5,
-      review: 'Vittal assembled the NORDLI bedroom setup from YUDA and I have to say this was the most seamless experience. Everything came together in a few hours.',
-      service: 'Furniture Assembly'
+      review: 'Vittal armó la configuración de habitación NORDLI de YUDA y debo decir que fue la experiencia más fluida. Todo se armó en pocas horas.',
+      service: 'Armado de Muebles'
     },
     {
       name: 'Tiffany B.',
       rating: 5,
-      review: 'David did an awesome job mounting shelves and cleaned up after he was done. He took his time and left everything properly.',
-      service: 'Furniture Assembly'
+      review: 'David hizo un trabajo increíble montando repisas y limpió después de terminar. Se tomó su tiempo y dejó todo correctamente.',
+      service: 'Armado de Muebles'
     },
     {
       name: 'Amanda L.',
       rating: 5,
-      review: 'I hired Joe to patch 2 holes on my wall and I hope on my ceiling. Joe was very professional and did a fantastic job.',
-      service: 'Home repairs'
+      review: 'Contraté a Joe para tapar 2 agujeros en mi pared y uno en mi techo. Joe fue muy profesional e hizo un trabajo fantástico.',
+      service: 'Reparaciones del hogar'
     },
     {
       name: 'Sabrina K.',
       rating: 5,
-      review: 'Aleksander was fantastic! He came with all the equipment to do the job. Everything was mounted securely and efficiently.',
-      service: 'Electrical help'
+      review: 'Aleksander fue fantástico! Vino con todo el equipo para hacer el trabajo. Todo quedó montado de manera segura y eficiente.',
+      service: 'Ayuda eléctrica'
     },
     {
       name: 'Jana T.',
       rating: 5,
-      review: 'Jose fixed my AC drain line which was clogging my master bathroom shower! He was thorough and efficient.',
-      service: 'Plumbing'
+      review: 'José arregló mi línea de drenaje de aire acondicionado que estaba obstruyendo la ducha de mi baño principal! Fue minucioso y eficiente.',
+      service: 'Plomería'
     },
     {
       name: 'Elsa R.',
       rating: 5,
-      review: 'Michael did a great job helping us install kitchen cabinet glass hinged shower doors.',
-      service: 'General Mounting'
+      review: 'Michael hizo un gran trabajo ayudándonos a instalar puertas de ducha con bisagras de vidrio para gabinetes de cocina.',
+      service: 'Montaje General'
     }
   ];
 
@@ -402,7 +402,7 @@ export const CustomerReviews = () => {
     <section className="py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">
-          See what happy customers are saying about YUDA
+          Mira lo que dicen nuestros clientes felices sobre YUDA
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -435,13 +435,13 @@ export const TrustIndicators = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8">
           <div className="flex items-center justify-center mb-4">
-            <span className="text-lg font-semibold text-gray-900 mr-2">Excellent</span>
+            <span className="text-lg font-semibold text-gray-900 mr-2">Excelente</span>
             <div className="flex text-green-500">
               {[...Array(5)].map((_, i) => (
                 <span key={i}>★</span>
               ))}
             </div>
-            <span className="text-sm text-gray-600 ml-2">43,509 reviews on</span>
+            <span className="text-sm text-gray-600 ml-2">43,509 reseñas en</span>
             <span className="text-sm font-semibold text-gray-900 ml-1">Trustpilot</span>
           </div>
         </div>
@@ -453,8 +453,8 @@ export const TrustIndicators = () => {
                 <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
               </svg>
             </div>
-            <h3 className="font-semibold text-gray-900 mb-2">Happiness Pledge</h3>
-            <p className="text-gray-600 text-sm">If you're not satisfied, we'll work to make it right.</p>
+            <h3 className="font-semibold text-gray-900 mb-2">Garantía de Felicidad</h3>
+            <p className="text-gray-600 text-sm">Si no estás satisfecho, trabajaremos para solucionarlo.</p>
           </div>
           
           <div className="flex flex-col items-center">
@@ -463,8 +463,8 @@ export const TrustIndicators = () => {
                 <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
             </div>
-            <h3 className="font-semibold text-gray-900 mb-2">Vetted Taskers</h3>
-            <p className="text-gray-600 text-sm">Taskers are always background checked before joining the platform.</p>
+            <h3 className="font-semibold text-gray-900 mb-2">Asistentes Verificados</h3>
+            <p className="text-gray-600 text-sm">Todos los asistentes pasan verificación de antecedentes antes de unirse a la plataforma.</p>
           </div>
           
           <div className="flex flex-col items-center">
@@ -473,8 +473,8 @@ export const TrustIndicators = () => {
                 <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
               </svg>
             </div>
-            <h3 className="font-semibold text-gray-900 mb-2">Dedicated Support</h3>
-            <p className="text-gray-600 text-sm">Friendly service when you need us - every day of the week.</p>
+            <h3 className="font-semibold text-gray-900 mb-2">Soporte Dedicado</h3>
+            <p className="text-gray-600 text-sm">Servicio amigable cuando lo necesites - todos los días de la semana.</p>
           </div>
         </div>
       </div>
@@ -487,17 +487,17 @@ export const HowItWorks = () => {
   const steps = [
     {
       number: 1,
-      title: 'Choose your Tasker by price, skills, and reviews.',
+      title: 'Elige tu Asistente por precio, habilidades y reseñas.',
       icon: '🔍'
     },
     {
       number: 2,
-      title: 'Schedule a Tasker as early as today.',
+      title: 'Programa un Asistente desde hoy mismo.',
       icon: '📅'
     },
     {
       number: 3,
-      title: 'Chat, pay, tip, and review all in one place.',
+      title: 'Conversa, paga, da propina y califica todo en un lugar.',
       icon: '💬'
     }
   ];
@@ -509,17 +509,17 @@ export const HowItWorks = () => {
           <div>
             <img 
               src="https://images.pexels.com/photos/1249611/pexels-photo-1249611.jpeg" 
-              alt="Professional working"
+              alt="Profesional trabajando"
               className="rounded-lg shadow-lg w-full h-80 object-cover"
             />
           </div>
           
           <div>
-            <h2 className="text-3xl font-bold text-gray-900 mb-8">How it works</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-8">Cómo funciona</h2>
             <div className="space-y-6">
               {steps.map((step, index) => (
                 <div key={index} className="flex items-start">
-                  <div className="flex-shrink-0 w-8 h-8 bg-teal-600 text-white rounded-full flex items-center justify-center font-bold text-sm mr-4">
+                  <div className="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-sm mr-4">
                     {step.number}
                   </div>
                   <div>
@@ -538,21 +538,21 @@ export const HowItWorks = () => {
 // Get Help Today Component
 export const GetHelpToday = () => {
   const services = [
-    'General Mounting', 'TV Mounting', 'Furniture Assembly', 'Furniture Assembly',
-    'Help Moving', 'Minor Cleaning', 'Handwork', 'Furniture Removal', 'Lawn Care',
-    'Hang Pictures', 'In-Home Furniture Movers', 'Shelf Mounting', 'Light Installation', 'Plumbing'
+    'Montaje General', 'Montaje de TV', 'Armado de Muebles', 'Armado de Muebles',
+    'Ayuda con Mudanza', 'Limpieza Menor', 'Trabajo Manual', 'Retiro de Muebles', 'Cuidado del Césped',
+    'Colgar Cuadros', 'Mudanza de Muebles en Casa', 'Montaje de Repisas', 'Instalación de Luces', 'Plomería'
   ];
 
   return (
     <section className="py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Get help Today</h2>
+        <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Obtén ayuda Hoy</h2>
         
         <div className="flex flex-wrap justify-center gap-3 mb-8">
           {services.map((service, index) => (
             <button 
               key={index}
-              className="bg-white text-gray-700 px-4 py-2 rounded-full text-sm border border-gray-200 hover:border-teal-300 hover:text-teal-600 transition-colors"
+              className="bg-white text-gray-700 px-4 py-2 rounded-full text-sm border border-gray-200 hover:border-blue-300 hover:text-blue-600 transition-colors"
             >
               {service}
             </button>
@@ -560,8 +560,8 @@ export const GetHelpToday = () => {
         </div>
         
         <div className="text-center">
-          <button className="text-teal-600 hover:text-teal-700 font-medium">
-            See All Services →
+          <button className="text-blue-600 hover:text-blue-700 font-medium">
+            Ver Todos los Servicios →
           </button>
         </div>
       </div>
@@ -578,32 +578,32 @@ export const Footer = () => {
           <div>
             <h3 className="text-lg font-bold mb-4">YUDA</h3>
             <p className="text-gray-400 text-sm">
-              Get help with everyday tasks from trusted Taskers in your area.
+              Obtén ayuda con tareas cotidianas de Asistentes confiables en tu área.
             </p>
           </div>
           
           <div>
-            <h4 className="font-semibold mb-4">Discover</h4>
+            <h4 className="font-semibold mb-4">Descubre</h4>
             <ul className="space-y-2 text-sm text-gray-400">
-              <li><a href="#" className="hover:text-white">Become a Tasker</a></li>
-              <li><a href="#" className="hover:text-white">Pricing</a></li>
-              <li><a href="#" className="hover:text-white">Enterprise</a></li>
-              <li><a href="#" className="hover:text-white">About Us</a></li>
+              <li><a href="#" className="hover:text-white">Ser Asistente</a></li>
+              <li><a href="#" className="hover:text-white">Precios</a></li>
+              <li><a href="#" className="hover:text-white">Empresas</a></li>
+              <li><a href="#" className="hover:text-white">Acerca de</a></li>
             </ul>
           </div>
           
           <div>
-            <h4 className="font-semibold mb-4">Support</h4>
+            <h4 className="font-semibold mb-4">Soporte</h4>
             <ul className="space-y-2 text-sm text-gray-400">
-              <li><a href="#" className="hover:text-white">Help Center</a></li>
-              <li><a href="#" className="hover:text-white">Contact Us</a></li>
-              <li><a href="#" className="hover:text-white">Trust & Safety</a></li>
-              <li><a href="#" className="hover:text-white">Terms of Service</a></li>
+              <li><a href="#" className="hover:text-white">Centro de Ayuda</a></li>
+              <li><a href="#" className="hover:text-white">Contáctanos</a></li>
+              <li><a href="#" className="hover:text-white">Confianza y Seguridad</a></li>
+              <li><a href="#" className="hover:text-white">Términos de Servicio</a></li>
             </ul>
           </div>
           
           <div>
-            <h4 className="font-semibold mb-4">Follow Us</h4>
+            <h4 className="font-semibold mb-4">Síguenos</h4>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white">
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -626,7 +626,7 @@ export const Footer = () => {
         
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-400 text-sm">
-            © 2025 YUDA Inc. All rights reserved. | Privacy Policy | Terms of Service
+            © 2025 YUDA Inc. Todos los derechos reservados. | Política de Privacidad | Términos de Servicio
           </p>
         </div>
       </div>
