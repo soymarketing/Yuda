@@ -98,45 +98,45 @@ export const HeroSection = () => {
   const [searchTerm, setSearchTerm] = useState('');
 
   const serviceCategories = [
-    { name: 'Assembly', icon: '🔧' },
-    { name: 'Mounting', icon: '📺' },
-    { name: 'Moving', icon: '📦' },
-    { name: 'Cleaning', icon: '🧽' },
-    { name: 'Outdoor Help', icon: '🌿' },
-    { name: 'Home Repairs', icon: '🔨' },
-    { name: 'Painting', icon: '🎨' },
-    { name: 'Trending', icon: '🔥' }
+    { name: 'Armado', icon: '🔧' },
+    { name: 'Montaje', icon: '📺' },
+    { name: 'Mudanza', icon: '📦' },
+    { name: 'Limpieza', icon: '🧽' },
+    { name: 'Ayuda Externa', icon: '🌿' },
+    { name: 'Reparaciones', icon: '🔨' },
+    { name: 'Pintura', icon: '🎨' },
+    { name: 'Populares', icon: '🔥' }
   ];
 
   const featuredServices = [
-    'General Furniture Assembly',
-    'TV Mounting',
-    'Crib Assembly',
-    'PAX Assembly',
-    'Bookshelf Assembly',
-    'Desk Assembly'
+    'Armado de Muebles en General',
+    'Montaje de TV',
+    'Armado de Cuna',
+    'Armado de Escritorio',
+    'Armado de Librero',
+    'Armado de Cama'
   ];
 
   return (
-    <section className="bg-gradient-to-br from-teal-50 to-blue-50 py-16">
+    <section className="bg-gradient-to-br from-blue-50 to-cyan-50 py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-4">
-            Book trusted help
+            Reserva ayuda confiable
             <br />
-            for home tasks
+            para tareas del hogar
           </h1>
           
           <div className="max-w-md mx-auto mt-8">
             <div className="flex rounded-md shadow-sm">
               <input
                 type="text"
-                className="flex-1 min-w-0 block w-full px-3 py-3 rounded-l-md border border-gray-300 focus:ring-teal-500 focus:border-teal-500 text-sm"
-                placeholder="What do you need help with?"
+                className="flex-1 min-w-0 block w-full px-3 py-3 rounded-l-md border border-gray-300 focus:ring-blue-500 focus:border-blue-500 text-sm"
+                placeholder="Necesito a YUDA para..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
               />
-              <button className="inline-flex items-center px-4 py-3 border border-l-0 border-teal-600 bg-teal-600 text-white text-sm font-medium rounded-r-md hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500">
+              <button className="inline-flex items-center px-4 py-3 border border-l-0 border-blue-600 bg-blue-600 text-white text-sm font-medium rounded-r-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
                 <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                 </svg>
@@ -157,7 +157,7 @@ export const HeroSection = () => {
           {/* Featured Services */}
           <div className="flex flex-wrap justify-center gap-2 mt-8 max-w-4xl mx-auto">
             {featuredServices.map((service, index) => (
-              <button key={index} className="bg-white text-gray-700 px-4 py-2 rounded-full text-sm border border-gray-200 hover:border-teal-300 hover:text-teal-600 transition-colors">
+              <button key={index} className="bg-white text-gray-700 px-4 py-2 rounded-full text-sm border border-gray-200 hover:border-blue-300 hover:text-blue-600 transition-colors">
                 {service}
               </button>
             ))}
