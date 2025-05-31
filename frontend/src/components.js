@@ -32,11 +32,11 @@ export const Header = () => {
           <nav className="hidden md:flex items-center space-x-8">
             <div className="relative">
               <button
-                className="text-gray-700 hover:text-teal-600 px-3 py-2 text-sm font-medium transition-colors"
+                className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
                 onMouseEnter={() => setIsServicesOpen(true)}
                 onMouseLeave={() => setIsServicesOpen(false)}
               >
-                Services
+                Servicios
               </button>
               {isServicesOpen && (
                 <div
@@ -45,23 +45,23 @@ export const Header = () => {
                   onMouseLeave={() => setIsServicesOpen(false)}
                 >
                   <div className="py-2">
-                    <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Assembly</a>
-                    <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Mounting</a>
-                    <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Moving</a>
-                    <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Cleaning</a>
-                    <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Outdoor Help</a>
-                    <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Home Repairs</a>
-                    <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Painting</a>
-                    <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Trending</a>
+                    <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Armado</a>
+                    <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Montaje</a>
+                    <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Mudanza</a>
+                    <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Limpieza</a>
+                    <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Ayuda Externa</a>
+                    <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Reparaciones</a>
+                    <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Pintura</a>
+                    <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Populares</a>
                   </div>
                 </div>
               )}
             </div>
-            <button className="text-gray-700 hover:text-teal-600 px-3 py-2 text-sm font-medium transition-colors">
-              Sign in / Log in
+            <button className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
+              Iniciar Sesión
             </button>
-            <button className="bg-teal-600 hover:bg-teal-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">
-              Become a Tasker
+            <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">
+              Ser Asistente
             </button>
           </nav>
 
