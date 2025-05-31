@@ -82,9 +82,9 @@ export const Header = () => {
         {isMobileMenuOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-gray-100">
-              <a href="#" className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-teal-600">Services</a>
-              <a href="#" className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-teal-600">Sign in / Log in</a>
-              <a href="#" className="block px-3 py-2 text-base font-medium bg-teal-600 text-white rounded-md">Become a Tasker</a>
+              <a href="#" className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600">Servicios</a>
+              <a href="#" className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600">Iniciar Sesión</a>
+              <a href="#" className="block px-3 py-2 text-base font-medium bg-blue-600 text-white rounded-md">Ser Asistente</a>
             </div>
           </div>
         )}
