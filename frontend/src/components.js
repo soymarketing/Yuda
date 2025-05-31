@@ -11,8 +11,20 @@ export const Header = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="flex-shrink-0">
-              <h1 className="text-2xl font-bold text-teal-600">YUDA</h1>
+            <div className="flex-shrink-0 flex items-center">
+              <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center mr-2">
+                <div className="relative">
+                  {/* Robot head */}
+                  <div className="w-8 h-6 bg-gray-100 rounded-full border-2 border-gray-800"></div>
+                  {/* Robot eyes */}
+                  <div className="absolute top-1 left-1 w-1.5 h-1.5 bg-blue-400 rounded-full"></div>
+                  <div className="absolute top-1 right-1 w-1.5 h-1.5 bg-blue-400 rounded-full"></div>
+                  {/* Robot antenna */}
+                  <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 w-0.5 h-1 bg-gray-800"></div>
+                  <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 w-1 h-1 bg-blue-400 rounded-full"></div>
+                </div>
+              </div>
+              <h1 className="text-2xl font-bold text-blue-600">YUDA</h1>
             </div>
           </div>
 
