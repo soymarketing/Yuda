@@ -1,5 +1,10 @@
 from fastapi import FastAPI, APIRouter
-from dotenv import load_dotenv
+try:
+    from dotenv import load_dotenv
+except ModuleNotFoundError:  # pragma: no cover - fallback if dependency missing
+    def load_dotenv(*args, **kwargs):  # type: ignore[return-type]
+        """Fallback no-op if python-dotenv isn't installed."""
+        logging.warning("python-dotenv not installed; skipping .env loading")
 from starlette.middleware.cors import CORSMiddleware
 from motor.motor_asyncio import AsyncIOMotorClient
 import os
